@@ -17,6 +17,8 @@
 		A38445032818CBBE004324F4 /* ChenGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38445022818CBBE004324F4 /* ChenGameViewController.swift */; };
 		A38445092818CC61004324F4 /* HoldemTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38445082818CC61004324F4 /* HoldemTabBarController.swift */; };
 		A38F104E2824937900903178 /* HoldemTrainerData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A38F104C2824937900903178 /* HoldemTrainerData.xcdatamodeld */; };
+		A3B51787283AC2F50015553B /* GameScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B51786283AC2F50015553B /* GameScore.swift */; };
+		A3B51789283AC6CC0015553B /* Storable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B51788283AC6CC0015553B /* Storable.swift */; };
 		A3F4C8E228014F79000D8A6F /* DeckOfPlayingCards in Frameworks */ = {isa = PBXBuildFile; productRef = A3F4C8E128014F79000D8A6F /* DeckOfPlayingCards */; };
 		A3F4C8E9280151A8000D8A6F /* ChenGuesserGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F4C8E7280151A8000D8A6F /* ChenGuesserGame.swift */; };
 		A3F4C8EA280151A8000D8A6F /* ChenHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F4C8E8280151A8000D8A6F /* ChenHand.swift */; };
@@ -39,6 +41,8 @@
 		A38445022818CBBE004324F4 /* ChenGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChenGameViewController.swift; sourceTree = "<group>"; };
 		A38445082818CC61004324F4 /* HoldemTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldemTabBarController.swift; sourceTree = "<group>"; };
 		A38F104D2824937900903178 /* HoldemTrainerData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HoldemTrainerData.xcdatamodel; sourceTree = "<group>"; };
+		A3B51786283AC2F50015553B /* GameScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScore.swift; sourceTree = "<group>"; };
+		A3B51788283AC6CC0015553B /* Storable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storable.swift; sourceTree = "<group>"; };
 		A3F4C8E7280151A8000D8A6F /* ChenGuesserGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChenGuesserGame.swift; sourceTree = "<group>"; };
 		A3F4C8E8280151A8000D8A6F /* ChenHand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChenHand.swift; sourceTree = "<group>"; };
 		A3F4C8EC280151B4000D8A6F /* ChenGameButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChenGameButton.swift; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				A357FB612831AFB500AC523E /* DataManager.swift */,
+				A3B51788283AC6CC0015553B /* Storable.swift */,
 			);
 			name = "Data Management";
 			path = "Pods/Data Management";
@@ -135,6 +140,7 @@
 			children = (
 				A3F4C8E7280151A8000D8A6F /* ChenGuesserGame.swift */,
 				A357FB56281F489300AC523E /* PotOddsGame.swift */,
+				A3B51786283AC2F50015553B /* GameScore.swift */,
 				A3F4C8E8280151A8000D8A6F /* ChenHand.swift */,
 			);
 			path = Models;
@@ -271,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A38F104E2824937900903178 /* HoldemTrainerData.xcdatamodeld in Sources */,
+				A3B51789283AC6CC0015553B /* Storable.swift in Sources */,
 				A357FB622831AFB500AC523E /* DataManager.swift in Sources */,
 				A357FB59281F48AD00AC523E /* PotOddsView.swift in Sources */,
 				A38445092818CC61004324F4 /* HoldemTabBarController.swift in Sources */,
@@ -278,6 +285,7 @@
 				A3F4C8EF280151B4000D8A6F /* ChenGameView.swift in Sources */,
 				A357FB55281F488200AC523E /* PotOddsViewController.swift in Sources */,
 				A357FB57281F489300AC523E /* PotOddsGame.swift in Sources */,
+				A3B51787283AC2F50015553B /* GameScore.swift in Sources */,
 				A3F4C8EE280151B4000D8A6F /* ChenGameButton.swift in Sources */,
 				A3F4C8E9280151A8000D8A6F /* ChenGuesserGame.swift in Sources */,
 				A38445032818CBBE004324F4 /* ChenGameViewController.swift in Sources */,
