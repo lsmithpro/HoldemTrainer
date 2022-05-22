@@ -87,24 +87,25 @@ extension DataManager {
     var migrator: DatabaseMigrator {
         var migrator = DatabaseMigrator()
         
-        migrator.registerMigration("createCharacterAttributeTable") { db in
+        migrator.registerMigration("createGameScores") { db in
             // Create a table
             // See https://github.com/groue/GRDB.swift#create-tables
-            try db.create(table: "characterAttribute") { t in
+            try db.create(table: "gameScore") { t in
                 t.autoIncrementedPrimaryKey("id")
                 t.column("name", .text).notNull().collate(.localizedCaseInsensitiveCompare)
-                t.column("value", .integer).notNull()
+                t.column("attempts", .integer).notNull()
+                t.column("correct", .integer).notNull()
             }
         }
         
-        migrator.registerMigration("addCharacterAttributes") { db in
-            let defaultAttributes = ["Strength(S)", "Intelligence(S)", "Wisdom(S)", "Dexterity(S)", "Constitution(S)", "Charisma(S)", "Acrobatics", "Animal Handling", "Arcana", "Athletics", "Arcana", "Athletics", "Deception", "History", "Insight", "Intimidation", "Investigation", "Medicine", "Nature", "Perception", "Perfomance", "Persuasion", "Religion", "Sleight of Hand", " Stealth", "Survival"]
-            defaultAttributes.forEach { attribute in
-                var characterAttribute = CharacterAttribute(name: attribute, value: 0)
+        migrator.registerMigration("addGameScores") { db in
+            let defaultScores = ["ChenGame", "PotOddsGame"]
+            defaultScores.forEach { score in
+                var gameScore = GameScore(name: score, attempts: 0, correct: 0)
                 do {
-                    try characterAttribute.insert(db)
+                    try gameScore.insert(db)
                 } catch {
-                    print("Error in 'addCharacterAttributes' migration. Unable to add character attribute \(attribute). ", error)
+                    print("Error in 'addGameScores' migration. Unable to add game score \(score). ", error)
                 }
             }
         }
