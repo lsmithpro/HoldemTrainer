@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A331B13928014EA600E6EC40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A331B13828014EA600E6EC40 /* AppDelegate.swift */; };
+		A331B14528014EAA00E6EC40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A331B14428014EAA00E6EC40 /* Assets.xcassets */; };
+		A34A6B3628015AB800C63F59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A34A6B3428015AB800C63F59 /* LaunchScreen.storyboard */; };
+		A357FB55281F488200AC523E /* PotOddsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A357FB54281F488200AC523E /* PotOddsViewController.swift */; };
+		A357FB57281F489300AC523E /* PotOddsGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A357FB56281F489300AC523E /* PotOddsGame.swift */; };
+		A357FB59281F48AD00AC523E /* PotOddsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A357FB58281F48AD00AC523E /* PotOddsView.swift */; };
+		A357FB622831AFB500AC523E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A357FB612831AFB500AC523E /* DataManager.swift */; };
+		A38445032818CBBE004324F4 /* ChenGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38445022818CBBE004324F4 /* ChenGameViewController.swift */; };
+		A38445092818CC61004324F4 /* HoldemTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38445082818CC61004324F4 /* HoldemTabBarController.swift */; };
+		A38F104E2824937900903178 /* HoldemTrainerData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A38F104C2824937900903178 /* HoldemTrainerData.xcdatamodeld */; };
+		A3F4C8E228014F79000D8A6F /* DeckOfPlayingCards in Frameworks */ = {isa = PBXBuildFile; productRef = A3F4C8E128014F79000D8A6F /* DeckOfPlayingCards */; };
+		A3F4C8E9280151A8000D8A6F /* ChenGuesserGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F4C8E7280151A8000D8A6F /* ChenGuesserGame.swift */; };
+		A3F4C8EA280151A8000D8A6F /* ChenHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F4C8E8280151A8000D8A6F /* ChenHand.swift */; };
+		A3F4C8EE280151B4000D8A6F /* ChenGameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F4C8EC280151B4000D8A6F /* ChenGameButton.swift */; };
+		A3F4C8EF280151B4000D8A6F /* ChenGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F4C8ED280151B4000D8A6F /* ChenGameView.swift */; };
+		D377E0C49655DE5B6D22279A /* Pods_Holdem_Trainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0DB619E6FE57AE8D220C5C3 /* Pods_Holdem_Trainer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D6C3226AAF75954A45D11B2 /* Pods-Holdem Trainer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Holdem Trainer.debug.xcconfig"; path = "Target Support Files/Pods-Holdem Trainer/Pods-Holdem Trainer.debug.xcconfig"; sourceTree = "<group>"; };
+		A331B13528014EA600E6EC40 /* Holdem Trainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Holdem Trainer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A331B13828014EA600E6EC40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A331B14428014EAA00E6EC40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A331B14928014EAA00E6EC40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A34A6B3528015AB800C63F59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../launch/launch/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A357FB54281F488200AC523E /* PotOddsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotOddsViewController.swift; sourceTree = "<group>"; };
+		A357FB56281F489300AC523E /* PotOddsGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotOddsGame.swift; sourceTree = "<group>"; };
+		A357FB58281F48AD00AC523E /* PotOddsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotOddsView.swift; sourceTree = "<group>"; };
+		A357FB612831AFB500AC523E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		A38445022818CBBE004324F4 /* ChenGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChenGameViewController.swift; sourceTree = "<group>"; };
+		A38445082818CC61004324F4 /* HoldemTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldemTabBarController.swift; sourceTree = "<group>"; };
+		A38F104D2824937900903178 /* HoldemTrainerData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HoldemTrainerData.xcdatamodel; sourceTree = "<group>"; };
+		A3F4C8E7280151A8000D8A6F /* ChenGuesserGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChenGuesserGame.swift; sourceTree = "<group>"; };
+		A3F4C8E8280151A8000D8A6F /* ChenHand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChenHand.swift; sourceTree = "<group>"; };
+		A3F4C8EC280151B4000D8A6F /* ChenGameButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChenGameButton.swift; sourceTree = "<group>"; };
+		A3F4C8ED280151B4000D8A6F /* ChenGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChenGameView.swift; sourceTree = "<group>"; };
+		C0DB619E6FE57AE8D220C5C3 /* Pods_Holdem_Trainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Holdem_Trainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D433B464682828BEA9BD61ED /* Pods-Holdem Trainer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Holdem Trainer.release.xcconfig"; path = "Target Support Files/Pods-Holdem Trainer/Pods-Holdem Trainer.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A331B13228014EA600E6EC40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3F4C8E228014F79000D8A6F /* DeckOfPlayingCards in Frameworks */,
+				D377E0C49655DE5B6D22279A /* Pods_Holdem_Trainer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13AEEE8C01B1857ABB0ECA31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0DB619E6FE57AE8D220C5C3 /* Pods_Holdem_Trainer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D171D8771D864D72A52C98C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D6C3226AAF75954A45D11B2 /* Pods-Holdem Trainer.debug.xcconfig */,
+				D433B464682828BEA9BD61ED /* Pods-Holdem Trainer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A331B12C28014EA600E6EC40 = {
+			isa = PBXGroup;
+			children = (
+				A38F104C2824937900903178 /* HoldemTrainerData.xcdatamodeld */,
+				A357FB602831967900AC523E /* Data Management */,
+				A331B13728014EA600E6EC40 /* Holdem Trainer */,
+				A331B13628014EA600E6EC40 /* Products */,
+				4D171D8771D864D72A52C98C /* Pods */,
+				13AEEE8C01B1857ABB0ECA31 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A331B13628014EA600E6EC40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A331B13528014EA600E6EC40 /* Holdem Trainer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A331B13728014EA600E6EC40 /* Holdem Trainer */ = {
+			isa = PBXGroup;
+			children = (
+				A34A6B3428015AB800C63F59 /* LaunchScreen.storyboard */,
+				A331B13828014EA600E6EC40 /* AppDelegate.swift */,
+				A3F4C8E6280151A8000D8A6F /* Models */,
+				A3F4C8EB280151B4000D8A6F /* Views */,
+				A3F4C8E328015196000D8A6F /* Controllers */,
+				A331B14428014EAA00E6EC40 /* Assets.xcassets */,
+				A331B14928014EAA00E6EC40 /* Info.plist */,
+			);
+			path = "Holdem Trainer";
+			sourceTree = "<group>";
+		};
+		A357FB602831967900AC523E /* Data Management */ = {
+			isa = PBXGroup;
+			children = (
+				A357FB612831AFB500AC523E /* DataManager.swift */,
+			);
+			name = "Data Management";
+			path = "Pods/Data Management";
+			sourceTree = "<group>";
+		};
+		A3F4C8E328015196000D8A6F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A38445022818CBBE004324F4 /* ChenGameViewController.swift */,
+				A38445082818CC61004324F4 /* HoldemTabBarController.swift */,
+				A357FB54281F488200AC523E /* PotOddsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A3F4C8E6280151A8000D8A6F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A3F4C8E7280151A8000D8A6F /* ChenGuesserGame.swift */,
+				A357FB56281F489300AC523E /* PotOddsGame.swift */,
+				A3F4C8E8280151A8000D8A6F /* ChenHand.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A3F4C8EB280151B4000D8A6F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A3F4C8EC280151B4000D8A6F /* ChenGameButton.swift */,
+				A3F4C8ED280151B4000D8A6F /* ChenGameView.swift */,
+				A357FB58281F48AD00AC523E /* PotOddsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A331B13428014EA600E6EC40 /* Holdem Trainer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A331B14C28014EAA00E6EC40 /* Build configuration list for PBXNativeTarget "Holdem Trainer" */;
+			buildPhases = (
+				ABCD6CDB4FCA9496E3F093B1 /* [CP] Check Pods Manifest.lock */,
+				A331B13128014EA600E6EC40 /* Sources */,
+				A331B13228014EA600E6EC40 /* Frameworks */,
+				A331B13328014EA600E6EC40 /* Resources */,
+				285E4381CF04E77D75D46F62 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Holdem Trainer";
+			packageProductDependencies = (
+				A3F4C8E128014F79000D8A6F /* DeckOfPlayingCards */,
+			);
+			productName = "Holdem Trainer";
+			productReference = A331B13528014EA600E6EC40 /* Holdem Trainer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A331B12D28014EA600E6EC40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					A331B13428014EA600E6EC40 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = A331B13028014EA600E6EC40 /* Build configuration list for PBXProject "Holdem Trainer" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A331B12C28014EA600E6EC40;
+			packageReferences = (
+				A3F4C8E028014F79000D8A6F /* XCRemoteSwiftPackageReference "example-package-deckofplayingcards" */,
+			);
+			productRefGroup = A331B13628014EA600E6EC40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A331B13428014EA600E6EC40 /* Holdem Trainer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A331B13328014EA600E6EC40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A331B14528014EAA00E6EC40 /* Assets.xcassets in Resources */,
+				A34A6B3628015AB800C63F59 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		285E4381CF04E77D75D46F62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Holdem Trainer/Pods-Holdem Trainer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Holdem Trainer/Pods-Holdem Trainer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Holdem Trainer/Pods-Holdem Trainer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABCD6CDB4FCA9496E3F093B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Holdem Trainer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A331B13128014EA600E6EC40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A38F104E2824937900903178 /* HoldemTrainerData.xcdatamodeld in Sources */,
+				A357FB622831AFB500AC523E /* DataManager.swift in Sources */,
+				A357FB59281F48AD00AC523E /* PotOddsView.swift in Sources */,
+				A38445092818CC61004324F4 /* HoldemTabBarController.swift in Sources */,
+				A3F4C8EA280151A8000D8A6F /* ChenHand.swift in Sources */,
+				A3F4C8EF280151B4000D8A6F /* ChenGameView.swift in Sources */,
+				A357FB55281F488200AC523E /* PotOddsViewController.swift in Sources */,
+				A357FB57281F489300AC523E /* PotOddsGame.swift in Sources */,
+				A3F4C8EE280151B4000D8A6F /* ChenGameButton.swift in Sources */,
+				A3F4C8E9280151A8000D8A6F /* ChenGuesserGame.swift in Sources */,
+				A38445032818CBBE004324F4 /* ChenGameViewController.swift in Sources */,
+				A331B13928014EA600E6EC40 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A34A6B3428015AB800C63F59 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A34A6B3528015AB800C63F59 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A331B14A28014EAA00E6EC40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A331B14B28014EAA00E6EC40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A331B14D28014EAA00E6EC40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D6C3226AAF75954A45D11B2 /* Pods-Holdem Trainer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2L2T3YJFPG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Holdem Trainer/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sirlukesalot.Holdem-Trainer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A331B14E28014EAA00E6EC40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D433B464682828BEA9BD61ED /* Pods-Holdem Trainer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2L2T3YJFPG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Holdem Trainer/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sirlukesalot.Holdem-Trainer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A331B13028014EA600E6EC40 /* Build configuration list for PBXProject "Holdem Trainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A331B14A28014EAA00E6EC40 /* Debug */,
+				A331B14B28014EAA00E6EC40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A331B14C28014EAA00E6EC40 /* Build configuration list for PBXNativeTarget "Holdem Trainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A331B14D28014EAA00E6EC40 /* Debug */,
+				A331B14E28014EAA00E6EC40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A3F4C8E028014F79000D8A6F /* XCRemoteSwiftPackageReference "example-package-deckofplayingcards" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/example-package-deckofplayingcards";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A3F4C8E128014F79000D8A6F /* DeckOfPlayingCards */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3F4C8E028014F79000D8A6F /* XCRemoteSwiftPackageReference "example-package-deckofplayingcards" */;
+			productName = DeckOfPlayingCards;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		A38F104C2824937900903178 /* HoldemTrainerData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A38F104D2824937900903178 /* HoldemTrainerData.xcdatamodel */,
+			);
+			currentVersion = A38F104D2824937900903178 /* HoldemTrainerData.xcdatamodel */;
+			path = HoldemTrainerData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A331B12D28014EA600E6EC40 /* Project object */;
+}

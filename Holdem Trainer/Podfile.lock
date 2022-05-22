@@ -1,0 +1,22 @@
+PODS:
+  - GRDB.swift (5.24.0):
+    - GRDB.swift/standard (= 5.24.0)
+  - GRDB.swift/standard (5.24.0)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - GRDB.swift
+  - SnapKit (~> 5.0.0)
+
+SPEC REPOS:
+  trunk:
+    - GRDB.swift
+    - SnapKit
+
+SPEC CHECKSUMS:
+  GRDB.swift: 7ecc8799aaa97cf1fbbcfa9d75821aa920cb713f
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 3e305b5d9f339682fd5f9167f3337fa24ee308cd
+
+COCOAPODS: 1.10.1
