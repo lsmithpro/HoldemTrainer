@@ -84,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				A38F104C2824937900903178 /* HoldemTrainerData.xcdatamodeld */,
-				A357FB602831967900AC523E /* Data Management */,
 				A331B13728014EA600E6EC40 /* Holdem Trainer */,
 				A331B13628014EA600E6EC40 /* Products */,
 				4D171D8771D864D72A52C98C /* Pods */,
@@ -104,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				A331B13828014EA600E6EC40 /* AppDelegate.swift */,
+				A357FB602831967900AC523E /* Data Management */,
 				A3F4C8E6280151A8000D8A6F /* Models */,
 				A3F4C8EB280151B4000D8A6F /* Views */,
 				A3F4C8E328015196000D8A6F /* Controllers */,
@@ -120,8 +120,7 @@
 				A357FB612831AFB500AC523E /* DataManager.swift */,
 				A3B51788283AC6CC0015553B /* Storable.swift */,
 			);
-			name = "Data Management";
-			path = "Pods/Data Management";
+			path = "Data Management";
 			sourceTree = "<group>";
 		};
 		A3F4C8E328015196000D8A6F /* Controllers */ = {
