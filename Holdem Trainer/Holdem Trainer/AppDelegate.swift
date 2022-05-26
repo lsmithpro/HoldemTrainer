@@ -9,9 +9,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.backgroundColor = .gray
         window?.rootViewController = HoldemTabBarController()
+        let scores: [GameScore] = DataManager.shared.getAll()
+        scores.forEach { score in
+            print("   \(score.name):  Correct\(score.correct): attempts\(score.attempts)")
+            
+        }
         
         return true
         
     }
-
+    
 }
