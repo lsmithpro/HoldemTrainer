@@ -3,20 +3,24 @@ PODS:
     - GRDB.swift/standard (= 5.24.0)
   - GRDB.swift/standard (5.24.0)
   - SnapKit (5.0.1)
+  - SwiftLint (0.47.1)
 
 DEPENDENCIES:
   - GRDB.swift
   - SnapKit (~> 5.0.0)
+  - SwiftLint
 
 SPEC REPOS:
   trunk:
     - GRDB.swift
     - SnapKit
+    - SwiftLint
 
 SPEC CHECKSUMS:
   GRDB.swift: 7ecc8799aaa97cf1fbbcfa9d75821aa920cb713f
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftLint: f80f1be7fa96d30e0aa68e58d45d4ea1ccaac519
 
-PODFILE CHECKSUM: 3e305b5d9f339682fd5f9167f3337fa24ee308cd
+PODFILE CHECKSUM: 2084c6e6f08500a75ac37e1c1dfdde43e4acc486
 
 COCOAPODS: 1.10.1

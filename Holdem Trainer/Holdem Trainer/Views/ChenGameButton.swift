@@ -1,11 +1,12 @@
 import Foundation
 import UIKit
+import Logging
 
 class ChenGameButton: UIButton {
     
     
     override init(frame: CGRect) {
-      
+        
          super.init(frame: frame)
          setupButton()
      }
@@ -21,6 +22,11 @@ class ChenGameButton: UIButton {
     }
     
      func setupButton() {
+       
+         
+     
+         
+         
          setShadow()
          setTitleColor(.black, for: .normal)
          

@@ -7,10 +7,12 @@
 
 import UIKit
 import SnapKit
+import Logging
+
 class ChenGameView: UIView {
     let stackView = UIStackView()
     var scorelabel = UILabel()
-    var storedScoreLabel = UILabel()
+   
     var handArray = [String]()
     var buttonOne = ChenGameButton()
     var buttonTwo = ChenGameButton()
@@ -20,12 +22,14 @@ class ChenGameView: UIView {
     
     
     override init(frame: CGRect) {
+        Logger.viewCycle.info("Chen View initialized")
         super.init(frame: frame)
         createSubviews()
         self.backgroundColor = UIColor(red: 99/255, green: 149/255, blue: 1, alpha: 1)
     }
     
     required init?(coder aDecoder: NSCoder) {
+        Logger.viewCycle.info("Chen View initialized")
         super.init(coder: aDecoder)
         createSubviews()
     }
@@ -78,19 +82,22 @@ class ChenGameView: UIView {
         
     }
     func initializeArr(_ hands: [String]) {
+        handArray.removeAll()
         for str in hands {
             handArray.append(str)
         }
+        Logger.info.info("Hands in Array \(handArray)")
         for i in 0..<buttonArray.count {
             buttonArray[i].setTitle(hands[i], for: .normal)
         }
     }
-    func updateSubviews(_ hands: [String], score: Int, storedScore: Int) {
+    func updateSubviews(_ hands: [String], score: Int) {
+        handArray.removeAll()
         for i in 0..<buttonArray.count {
             buttonArray[i].setTitle(hands[i], for: .normal)
         }
         scorelabel.text = String(score)
-        storedScoreLabel.text = String(storedScore)
+        
         
         
     }

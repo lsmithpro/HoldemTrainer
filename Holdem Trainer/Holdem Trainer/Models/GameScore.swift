@@ -41,3 +41,9 @@ extension GameScore: Codable, FetchableRecord, MutablePersistableRecord {
         id = rowID
     }
 }
+
+extension GameScore: CustomStringConvertible {
+    var description: String {
+           "\(name)\t Correct: \(correct)\t Attempts: \(attempts)"
+       }
+}
