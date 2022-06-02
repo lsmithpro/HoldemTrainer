@@ -143,6 +143,19 @@ struct ChenHand {
     }
 }
 
-
-
+extension ChenHand: CustomStringConvertible {
+    public var description: String {
+        var ret = ""
+        ret = ret + handArray[0].rank.description + handArray[1].rank.description
+        if (handArray[0].suit == handArray[1].suit) {
+            ret = ret + "s"
+        } else if (handArray[0].rank == handArray[1].rank){
+            return ret
+        } else {
+            ret = ret + "o"
+        }
+        return ret
+        
+    }
+}
 

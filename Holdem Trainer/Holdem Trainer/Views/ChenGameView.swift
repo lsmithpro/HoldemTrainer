@@ -21,6 +21,7 @@ class ChenGameView: UIView {
     
     
     
+    
     override init(frame: CGRect) {
         Logger.viewCycle.info("Chen View initialized")
         super.init(frame: frame)
@@ -97,7 +98,6 @@ class ChenGameView: UIView {
             buttonArray[i].setTitle(hands[i], for: .normal)
         }
         scorelabel.text = String(score)
-        
         
         
     }
