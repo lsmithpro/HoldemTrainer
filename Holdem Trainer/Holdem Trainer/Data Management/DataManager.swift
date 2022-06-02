@@ -60,7 +60,7 @@ extension DataManager: GameScoreManagable {
         update(row: gameScore)
     }
     
-    func delete(gameScore: GameScore) -> Bool {
+        func delete(gameScore: GameScore) -> Bool {
         var deletable = gameScore
         return delete(row: &deletable)
     }

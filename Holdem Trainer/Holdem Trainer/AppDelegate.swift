@@ -11,7 +11,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = HoldemTabBarController()
         let scores: [GameScore] = DataManager.shared.getAll()
         scores.forEach { score in
-            print("   \(score.name):  Correct\(score.correct): attempts\(score.attempts)")
+            print(score)
             
         }
         

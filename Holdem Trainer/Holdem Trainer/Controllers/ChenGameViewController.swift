@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Logging
+
 
 class ChenGameViewController: UIViewController {
     var highScore = 0
@@ -30,8 +32,10 @@ class ChenGameViewController: UIViewController {
     
     func gameRun()  {
         gameDataDict = chenGame.RunGame()
+        Logger.info.info("Initializing Subviews with \(gameDataDict.keys)")
         gameView.initializeArr(Array(gameDataDict.keys))
-        gameView.updateSubviews(Array(gameDataDict.keys), score: highScore, storedScore: gameScoreStored?.correct ?? 4)
+        Logger.info.info("Updating Subviews with \(gameDataDict.keys)")
+        gameView.updateSubviews(Array(gameDataDict.keys), score: highScore)
         
     }
  

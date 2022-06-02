@@ -8,5 +8,6 @@ target 'Holdem Trainer' do
   # Pods for Holdem Trainer
   pod 'SnapKit', '~> 5.0.0'
   pod 'GRDB.swift'
+  pod 'SwiftLint'
 
 end

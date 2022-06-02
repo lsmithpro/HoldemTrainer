@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A31DAAC528404FD4003EFCFC /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31DAAC428404FD4003EFCFC /* StatisticsViewController.swift */; };
+		A31DAAC728404FDF003EFCFC /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31DAAC628404FDF003EFCFC /* StatisticsView.swift */; };
+		A31DAAC928417C83003EFCFC /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31DAAC828417C83003EFCFC /* Logger.swift */; };
+		A31DAACC2841A938003EFCFC /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = A31DAACB2841A938003EFCFC /* Logging */; };
+		A31DAACE2841D5E3003EFCFC /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31DAACD2841D5E3003EFCFC /* Errors.swift */; };
 		A331B13928014EA600E6EC40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A331B13828014EA600E6EC40 /* AppDelegate.swift */; };
 		A331B14528014EAA00E6EC40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A331B14428014EAA00E6EC40 /* Assets.xcassets */; };
 		A357FB55281F488200AC523E /* PotOddsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A357FB54281F488200AC523E /* PotOddsViewController.swift */; };
@@ -29,6 +34,10 @@
 /* Begin PBXFileReference section */
 		0D6C3226AAF75954A45D11B2 /* Pods-Holdem Trainer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Holdem Trainer.debug.xcconfig"; path = "Target Support Files/Pods-Holdem Trainer/Pods-Holdem Trainer.debug.xcconfig"; sourceTree = "<group>"; };
 		A306D944283ACBC30013AAB1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "/Users/luke/HoldemTrainer/Holdem Trainer/Holdem Trainer/Launch Screen.storyboard"; sourceTree = "<absolute>"; };
+		A31DAAC428404FD4003EFCFC /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		A31DAAC628404FDF003EFCFC /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		A31DAAC828417C83003EFCFC /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		A31DAACD2841D5E3003EFCFC /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		A331B13528014EA600E6EC40 /* Holdem Trainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Holdem Trainer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A331B13828014EA600E6EC40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A331B14428014EAA00E6EC40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A31DAACC2841A938003EFCFC /* Logging in Frameworks */,
 				A3F4C8E228014F79000D8A6F /* DeckOfPlayingCards in Frameworks */,
 				D377E0C49655DE5B6D22279A /* Pods_Holdem_Trainer.framework in Frameworks */,
 			);
@@ -118,7 +128,9 @@
 			isa = PBXGroup;
 			children = (
 				A357FB612831AFB500AC523E /* DataManager.swift */,
+				A31DAACD2841D5E3003EFCFC /* Errors.swift */,
 				A3B51788283AC6CC0015553B /* Storable.swift */,
+				A31DAAC828417C83003EFCFC /* Logger.swift */,
 			);
 			path = "Data Management";
 			sourceTree = "<group>";
@@ -128,6 +140,7 @@
 			children = (
 				A38445022818CBBE004324F4 /* ChenGameViewController.swift */,
 				A38445082818CC61004324F4 /* HoldemTabBarController.swift */,
+				A31DAAC428404FD4003EFCFC /* StatisticsViewController.swift */,
 				A357FB54281F488200AC523E /* PotOddsViewController.swift */,
 			);
 			path = Controllers;
@@ -148,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				A3F4C8EC280151B4000D8A6F /* ChenGameButton.swift */,
+				A31DAAC628404FDF003EFCFC /* StatisticsView.swift */,
 				A3F4C8ED280151B4000D8A6F /* ChenGameView.swift */,
 				A357FB58281F48AD00AC523E /* PotOddsView.swift */,
 			);
@@ -166,6 +180,7 @@
 				A331B13228014EA600E6EC40 /* Frameworks */,
 				A331B13328014EA600E6EC40 /* Resources */,
 				285E4381CF04E77D75D46F62 /* [CP] Embed Pods Frameworks */,
+				A31DAAC328404CA6003EFCFC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -174,6 +189,7 @@
 			name = "Holdem Trainer";
 			packageProductDependencies = (
 				A3F4C8E128014F79000D8A6F /* DeckOfPlayingCards */,
+				A31DAACB2841A938003EFCFC /* Logging */,
 			);
 			productName = "Holdem Trainer";
 			productReference = A331B13528014EA600E6EC40 /* Holdem Trainer.app */;
@@ -205,6 +221,7 @@
 			mainGroup = A331B12C28014EA600E6EC40;
 			packageReferences = (
 				A3F4C8E028014F79000D8A6F /* XCRemoteSwiftPackageReference "example-package-deckofplayingcards" */,
+				A31DAACA2841A938003EFCFC /* XCRemoteSwiftPackageReference "swift-log" */,
 			);
 			productRefGroup = A331B13628014EA600E6EC40 /* Products */;
 			projectDirPath = "";
@@ -244,6 +261,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Holdem Trainer/Pods-Holdem Trainer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A31DAAC328404CA6003EFCFC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		ABCD6CDB4FCA9496E3F093B1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -275,6 +310,7 @@
 			files = (
 				A38F104E2824937900903178 /* HoldemTrainerData.xcdatamodeld in Sources */,
 				A3B51789283AC6CC0015553B /* Storable.swift in Sources */,
+				A31DAAC528404FD4003EFCFC /* StatisticsViewController.swift in Sources */,
 				A357FB622831AFB500AC523E /* DataManager.swift in Sources */,
 				A357FB59281F48AD00AC523E /* PotOddsView.swift in Sources */,
 				A38445092818CC61004324F4 /* HoldemTabBarController.swift in Sources */,
@@ -284,8 +320,11 @@
 				A357FB57281F489300AC523E /* PotOddsGame.swift in Sources */,
 				A3B51787283AC2F50015553B /* GameScore.swift in Sources */,
 				A3F4C8EE280151B4000D8A6F /* ChenGameButton.swift in Sources */,
+				A31DAAC928417C83003EFCFC /* Logger.swift in Sources */,
+				A31DAAC728404FDF003EFCFC /* StatisticsView.swift in Sources */,
 				A3F4C8E9280151A8000D8A6F /* ChenGuesserGame.swift in Sources */,
 				A38445032818CBBE004324F4 /* ChenGameViewController.swift in Sources */,
+				A31DAACE2841D5E3003EFCFC /* Errors.swift in Sources */,
 				A331B13928014EA600E6EC40 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +524,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A31DAACA2841A938003EFCFC /* XCRemoteSwiftPackageReference "swift-log" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-log.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		A3F4C8E028014F79000D8A6F /* XCRemoteSwiftPackageReference "example-package-deckofplayingcards" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/example-package-deckofplayingcards";
@@ -496,6 +543,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A31DAACB2841A938003EFCFC /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A31DAACA2841A938003EFCFC /* XCRemoteSwiftPackageReference "swift-log" */;
+			productName = Logging;
+		};
 		A3F4C8E128014F79000D8A6F /* DeckOfPlayingCards */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A3F4C8E028014F79000D8A6F /* XCRemoteSwiftPackageReference "example-package-deckofplayingcards" */;
