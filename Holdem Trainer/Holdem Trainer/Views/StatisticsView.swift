@@ -13,6 +13,9 @@ class StatisticsView: UIView {
     
     let stackView = UIStackView()
     let statisticsArray: [GameScore]
+    let statsText = UITextView()
+    
+    
     
 
     
@@ -24,6 +27,7 @@ class StatisticsView: UIView {
         super.init(frame: frame)
         createSubviews()
         self.backgroundColor = UIColor(red: 99/255, green: 149/255, blue: 1, alpha: 1)
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -45,28 +49,11 @@ class StatisticsView: UIView {
             make.top.equalTo(safeAreaLayoutGuide.snp.topMargin)
             make.bottom.equalTo(safeAreaLayoutGuide.snp.bottomMargin)
         }
-        
-        statisticsArray.forEach() { score in
-            let statsStack = UIStackView()
-            statsStack.axis = .horizontal
-            statsStack.distribution = .equalSpacing
-            let nameLabel = UILabel()
-            nameLabel.text = "\(score.name)"
-            statsStack.addArrangedSubview(nameLabel)
-            let correctLabel = UILabel()
-            correctLabel.text = "\(score.correct)"
-            statsStack.addArrangedSubview(correctLabel)
-            let attemptsLabel = UILabel()
-            attemptsLabel.text = "\(score.attempts)"
-            statsStack.addArrangedSubview(attemptsLabel)
-            let percentageLabel = UILabel()
-            percentageLabel.text = "\(Double(score.correct) / Double(score.attempts != 0 ? score.attempts : 1))%"
-            statsStack.addArrangedSubview(percentageLabel)
-            
-            stackView.distribution = .fillEqually
-            stackView.addArrangedSubview(statsStack)
-        
-        }
+        statsText.text = "Rules for the Game are as Follows: 3 Poker hands are presented, Choose the hand with the highest value according to Chen's Formula, all answers tied for the highest value will be considered correct"
+        statsText.backgroundColor = UIColor(red: 99/255, green: 149/255, blue: 1, alpha: 1)
+        statsText.font = UIFont(name: "Helvetica", size: 20)
+        statsText.isEditable = false    
+        stackView.addArrangedSubview(statsText)
         
     
         
