@@ -13,11 +13,11 @@ class HoldemTabBarController: UITabBarController {
        
     
             super.viewDidLoad()
-        let nav = genNavCon(vc: ChenGameViewController(), title: "ChenGame", image: UIImage(systemName: "multiply.circle.fill")! )
-       let nav2 = genNavCon(vc: PotOddsViewController(), title: "PotOdds", image: UIImage(systemName: "square.and.arrow.up.fill")!)
-        let nav3 = genNavCon(vc: StatisticsViewController(), title: "Statistics", image: UIImage(systemName: "square.and.arrow.up.fill")!)
-        self.tabBar.backgroundColor = .white
-            viewControllers  = [nav,nav2,nav3]
+        let nav = genNavCon(vc: ChenGameViewController(), title: "ChenGame", image: UIImage(systemName: "gamecontroller")! )
+        let nav2 = genNavCon(vc: StatisticsViewController(), title: "Rules", image: UIImage(systemName: "questionmark.square.dashed")!)
+        self.tabBar.backgroundColor =  .black
+        
+            viewControllers  = [nav,nav2]
 
         // Do any additional setup after loading the view.
     }
